@@ -23,10 +23,10 @@ An application for formal group discussions.
    
 3.  Create a virtual environment using virtualenv or venv.
      ```console
-     ## Let's install virtualenv first
+     # Let's install virtualenv first
      pip install virtualenv
 
-     ## Then we create our virtual environment
+     # Then we create our virtual environment
      virtualenv envname
      
      ```
