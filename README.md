@@ -1,13 +1,13 @@
 # Confab : Find your study partners
-===================================
+**<hr>**
 
 An application for formal group discussions.
 
 
-Setup
------
+## Setup
+<hr>
 
-## Cloning the repository
+### I. Cloning the repository
 
 1. Clone the repository using the command below :
    ```console
@@ -43,7 +43,7 @@ Setup
  
    ```
    
-## Running the app
+### II. Running the app
 
 --> To run the project locally, we use :
     ```console
