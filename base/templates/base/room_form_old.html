@@ -1,0 +1,16 @@
+{% extends 'main.html' %} 
+
+{% block content%}
+
+<div>
+  <!--method=POST for creating and updating data-->
+  <form method="POST" action="">
+    <!-- csrf token will be send on every form submit.
+        This will also prevent malicious attempt-->
+    {% csrf_token %} {{form.as_p}}
+
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+
+{% endblock content%}
