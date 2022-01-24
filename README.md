@@ -1,11 +1,11 @@
 # Confab : Find your study partners
-**<hr>**
 
 An application for formal group discussions.
 
+**<hr>**
+
 
 ## Setup
-<hr>
 
 ### I. Cloning the repository
 
