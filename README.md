@@ -46,9 +46,8 @@ An application for formal group discussions.
 ### II. Running the app
 
 To run the project locally :
-    ```bash
+    ```
     python manage.py runserver
-    
     ```
     
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
