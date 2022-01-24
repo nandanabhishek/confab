@@ -45,7 +45,7 @@ An application for formal group discussions.
    
 ### II. Running the app
 
---> To run the project locally, we use :
+To run the project locally, we use :
     ```
     python manage.py runserver
 
