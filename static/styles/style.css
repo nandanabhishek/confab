@@ -459,6 +459,13 @@ a {
   fill: var(--color-main);
 }
 
+.layout__body_updateform {
+  margin-top: 35rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
 .layout__body {
   margin: 3rem;
 }
@@ -802,6 +809,7 @@ a {
 
 .update-account.layout .layout__box {
   max-width: 68rem;
+  margin: auto;
 }
 
 /*==============================
@@ -1163,22 +1171,4 @@ a {
   color: var(--color-main);
   font-weight: 1.4rem;
 }
-
-
-
-/* for social media icons*/
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
 
