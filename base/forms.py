@@ -19,4 +19,4 @@ class RoomForm(ModelForm):
 class UserForm(ModelForm):
     class Meta:
         model = User
-        fields = ['avatar', 'name', 'username', 'email', 'bio'] # later on we will give option of bio and profile pic
+        fields = ['avatar', 'name', 'username', 'email', 'bio', 'url_fb', 'url_insta', 'url_linkedin', 'url_git'] 
