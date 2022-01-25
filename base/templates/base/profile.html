@@ -1,5 +1,4 @@
 {% extends 'main.html' %}
-{% load static %}
 
 {% block content %}
 
@@ -32,52 +31,11 @@
               {{user.bio}}
             </p>
           </div>
-          {% if user.url_fb or user.url_insta or user.url_linkedin or user.url_git %}
-          <div class="profile__about">
-            <h3>Connect with your host</h3>
-            <p>
-              {% if user.url_fb %}
-              <div class="fa">
-              <a href="{{user.url_fb}}"> 
-                  <img src="{% static 'images/icons/iconFb.png' %}" />
-              </a>
-              </div>
-              {% endif %}
-
-              
-              {% if user.url_insta %}
-              <div class="fa">
-                <a href="{{user.url_insta}}">
-                  <img src="{% static 'images/icons/iconInsta.png' %}" />
-                </a>
-              </div>
-              {% endif %}
-
-              
-              {% if user.url_linkedin %}
-              <div class="fa">
-                <a href="{{user.url_linkedin}}">
-                  <img src="{% static 'images/icons/iconLinkedin.png' %}" />
-                </a>
-              </div>
-              {% endif %}
-
-              {% if user.url_git %}
-              <div class="fa">
-                <a href="{{user.url_git}}">
-                  <img src="{% static 'images/icons/iconGit.png' %}" />
-                </a>
-              </div>
-              {% endif %}
-              
-            </p>
-          </div>
-          {% endif %}
         </div>
 
         <div class="roomList__header">
           <div>
-            <h2>Study Rooms Hosted by {{user.name}} : {{rooms.count}} </a>
+            <h2>Study Rooms Hosted by {{user.name}} : ###</a>
             </h2>
           </div>
         </div>

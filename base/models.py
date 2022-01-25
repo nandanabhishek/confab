@@ -8,15 +8,6 @@ class User(AbstractUser):
     email = models.EmailField(unique=True, null=True)
     bio = models.TextField(null=True)
     avatar = models.ImageField(null=True, default="avatar.svg")
-    
-    
-    url_fb = models.URLField(null=True, blank=True, verbose_name='Url-Facebook')
-    url_insta = models.URLField(null=True, blank=True, verbose_name='Url-Instagram')
-    # url_twitter = models.URLField(null=True, blank=False, verbose_name='Url-Twitter')
-    url_linkedin = models.URLField(null=True, blank=True, verbose_name='Url-Linkedin')
-    url_git = models.URLField(null=True, blank=True, verbose_name='Url-GitHub')
-    
-    
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
