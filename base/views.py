@@ -8,7 +8,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from .models import Room, Topic, Message, User
+
 from .forms import RoomForm, UserForm, MyUserCreationForm
+
 
 
 def loginPage(request):
@@ -73,7 +75,7 @@ def home(request):
     topics = Topic.objects.all()[0:5]
     room_count = rooms.count()
     
-    room_messages = Message.objects.filter(Q(room__topic__name__icontains=q)) # we can modify this to filter only few 
+    room_messages = Message.objects.filter(Q(room__topic__name__icontains=q))[:5] # this will post only latest 5 messages in Activity section 
     
     context = {'rooms':rooms, 'topics': topics, 'room_count': room_count, 'room_messages': room_messages}
     return render(request, 'base/home.html', context)
@@ -215,4 +217,3 @@ def activityPage(request):
     room_messages = Message.objects.all()
     return render(request, 'base/activity.html', {'room_messages': room_messages})
 
-    

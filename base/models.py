@@ -49,11 +49,11 @@ class Room(models.Model):
     # auto_now_add takes snapshot only once we save it for the first time.
     
     # will add an option to like room
-    # like
     
     class Meta:
         ordering = ['-updated', '-created']
     
+        
     def __str__(self) -> str:
         return self.name
 

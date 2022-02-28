@@ -1,6 +1,10 @@
+from unittest.util import _MAX_LENGTH
 from django.forms import ModelForm
 from .models import Room, User
 from django.contrib.auth.forms import UserCreationForm
+
+from base import models
+
 
 
 class MyUserCreationForm(UserCreationForm):
